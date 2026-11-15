@@ -121,6 +121,7 @@ details p{margin:12px 0 0;color:var(--ink-2)}
 .contact p{color:#d4e6dc;margin:14px 0 0}
 .contact .btn{background:#f6f3ec;color:var(--green) !important}
 .contact .mail{display:block;margin-top:12px;color:#fff;font-size:15px}
+.copy{font:inherit;font-size:14px;font-weight:600;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 14px;margin-left:0;cursor:pointer}.copy:hover{background:rgba(255,255,255,.12)}.mailline{margin:16px 0 0 !important;font-size:15px;color:#eef5f0 !important;display:flex;flex-wrap:wrap;align-items:center;gap:6px}.mailline b{color:#fff;font-weight:600}
 footer{padding:36px 0 48px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
@@ -291,7 +292,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
         <div>
           <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%20AI%20visibility%20check&amp;body=Store%20URL%3A%20%0ATop%203%20products%3A%20">Email us for a free check</a>
-          <a class="mail" href="mailto:eduardo@bepickedfirst.com">eduardo@bepickedfirst.com</a>
+          <p class="mailline">Or write to <b>eduardo@bepickedfirst.com</b><button type="button" class="copy" data-copy="eduardo@bepickedfirst.com">Copy email</button></p>
         </div>
       </div>
     </div>
@@ -304,5 +305,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <span>AI shopping visibility for independent Shopify brands</span>
   </div>
 </footer>
+<script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent='Copied!';setTimeout(function(){b.textContent=o},1800)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,fallback)}else{fallback()}function fallback(){var t=document.createElement('textarea');t.value=v;t.setAttribute('readonly','');t.style.position='absolute';t.style.left='-9999px';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done()}})})</script>
 </body>
 </html>
