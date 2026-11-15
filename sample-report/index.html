@@ -61,6 +61,7 @@ td.good{color:var(--green);font-weight:600}
 footer{padding:36px 0 48px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:var(--muted)}
+.copy{font:inherit;font-size:14px;font-weight:600;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 14px;margin-left:0;cursor:pointer}.copy:hover{background:rgba(255,255,255,.12)}.mailline{margin:16px 0 0 !important;font-size:15px;color:#eef5f0 !important;display:flex;flex-wrap:wrap;align-items:center;gap:6px}.mailline b{color:#fff;font-weight:600}
 @media (max-width:700px){.stats{grid-template-columns:1fr}
 .tablewrap{overflow:visible}thead{display:none}table,tbody,tr,td{display:block;width:100%}tr{padding:10px 0;border-bottom:1px solid var(--line)}tr:last-child{border-bottom:none}td{border:none;padding:3px 16px}td:before{content:attr(data-label);display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}td[data-label="#"]{font-family:var(--serif);font-weight:600;color:var(--ink)}td[data-label="#"]:before{display:none}.nav-links a:not(.btn){display:none}article{padding-top:40px}}
 </style>
@@ -114,7 +115,8 @@ footer a{color:var(--muted)}
 <div class="cta">
   <h2>Does ChatGPT recommend your store?</h2>
   <p>Send us your store URL and your top 3 products. We'll test the questions your buyers ask and email you the results within 48 hours. Free, no call needed.</p>
-  <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%20AI%20visibility%20check&amp;body=Store%20URL%3A%20%0ATop%203%20products%3A%20">Get a free AI visibility check</a>
+  <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%20AI%20visibility%20check&amp;body=Store%20URL%3A%20%0ATop%203%20products%3A%20">Email us for a free check</a>
+  <p class="mailline">Or write to <b>eduardo@bepickedfirst.com</b><button type="button" class="copy" data-copy="eduardo@bepickedfirst.com">Copy email</button></p>
 </div>
 </article>
 </main>
@@ -124,5 +126,6 @@ footer a{color:var(--muted)}
     <span>AI shopping visibility for independent Shopify brands</span>
   </div>
 </footer>
+<script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent='Copied!';setTimeout(function(){b.textContent=o},1800)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,fallback)}else{fallback()}function fallback(){var t=document.createElement('textarea');t.value=v;t.setAttribute('readonly','');t.style.position='absolute';t.style.left='-9999px';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done()}})})</script>
 </body>
 </html>
