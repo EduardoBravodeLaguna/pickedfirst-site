@@ -8,14 +8,14 @@
 <link rel="canonical" href="https://bepickedfirst.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="PickedFirst: get picked first by AI shopping assistants">
-<meta property="og:description" content="We test the questions your customers ask ChatGPT, find where your store is missing, and fix what's in your control.">
+<meta property="og:description" content="I test the questions your customers ask ChatGPT, find where your store is missing, and fix what's in your control.">
 <meta property="og:url" content="https://bepickedfirst.com/">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"PickedFirst","url":"https://bepickedfirst.com/","email":"eduardo@bepickedfirst.com","description":"AI shopping visibility for independent Shopify brands: testing, fixing and tracking how ChatGPT and other AI assistants recommend products.","areaServed":"US"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"PickedFirst","url":"https://bepickedfirst.com/","email":"eduardo@bepickedfirst.com","description":"AI shopping visibility for independent Shopify brands: testing, fixing and tracking how ChatGPT and other AI assistants recommend products.","areaServed":"US","founder":{"@type":"Person","name":"Eduardo Bravo","jobTitle":"Founder","email":"eduardo@bepickedfirst.com"}}
 </script>
 <style>
 :root{
@@ -125,7 +125,30 @@ details p{margin:12px 0 0;color:var(--ink-2)}
 footer{padding:36px 0 48px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+/* founder */
+.byline{display:flex;align-items:center;gap:12px;margin-top:22px}
+.byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line)}
+.byline p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.4}
+.byline b{color:var(--ink)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.portrait{position:relative}
+.portrait img{display:block;width:100%;max-width:400px;aspect-ratio:380/450;object-fit:cover;border-radius:22px;box-shadow:0 30px 60px -35px rgba(22,32,27,.45)}
+.portrait .tag{position:absolute;left:18px;bottom:18px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.35;box-shadow:0 10px 30px -20px rgba(22,32,27,.5)}
+.portrait .tag b{display:block;font-family:var(--serif);font-size:17px}
+.about h2{font-size:clamp(30px,3.6vw,42px);margin:10px 0 18px}
+.about p{color:var(--ink-2);margin:0 0 14px}
+.promises{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:10px}
+.promises li{position:relative;padding-left:28px;color:var(--ink-2);font-size:16px}
+.promises li:before{content:"";position:absolute;left:2px;top:9px;width:12px;height:7px;border-left:2px solid var(--green-2);border-bottom:2px solid var(--green-2);transform:rotate(-45deg)}
+.sig{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.contact-person{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.contact-person img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:2px solid rgba(255,255,255,.7)}
+.contact-person span{font-size:14.5px;color:#d4e6dc;line-height:1.35}
+.contact-person b{display:block;color:#fff;font-size:16px}
+
 @media (max-width:880px){
+  .about{grid-template-columns:1fr;gap:32px}
+  .portrait img{max-width:320px}
   .hero{grid-template-columns:1fr;padding-top:48px;gap:40px}
   .case,.steps,.plans{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr;padding:36px 28px}
@@ -144,6 +167,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </a>
     <nav class="nav-links">
       <a href="#how">How it works</a>
+      <a href="#about">About</a>
       <a href="/study/">Study</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
@@ -157,12 +181,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div>
       <div class="eyebrow">AI shopping visibility for Shopify brands</div>
       <h1>When shoppers ask ChatGPT what to buy, <em>does it name your store?</em></h1>
-      <p class="lead">More shoppers now start with a question to an AI assistant instead of a search box. PickedFirst tests the questions your customers actually ask, shows you where you're missing, and fixes what's in your control so AI assistants can find and recommend your products.</p>
+      <p class="lead">More shoppers now start with a question to an AI assistant instead of a search box. I test the questions your customers actually ask, show you where you're missing, and fix what's in your control so AI assistants can find and recommend your products.</p>
       <div class="cta-row">
         <a class="btn" href="#contact">Get a free AI visibility check</a>
         <a class="btn ghost" href="#how">See how it works</a>
       </div>
-      <p class="small" style="margin-top:14px">Free check: 10 buyer questions, results in 48 hours. No call needed.</p>
+      <div class="byline">
+        <img src="eduardo.svg" alt="Eduardo Bravo, founder of PickedFirst" width="44" height="44">
+        <p><b>Every check reviewed and sent by Eduardo Bravo, founder.</b><br>Free check: 10 buyer questions, results in 48 hours. No call needed.</p>
+      </div>
     </div>
 
     <div class="chat" role="img" aria-label="Example: an AI assistant answers a shopping question and a brand is missing from the list">
@@ -187,21 +214,46 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <section class="band">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">What we keep finding</div>
+        <div class="eyebrow">What I keep finding</div>
         <h2>Great products, invisible to the assistant</h2>
-        <p>We asked ChatGPT 20 real buyer questions across outdoor and travel gear. A pattern showed up again and again: independent brands win the enthusiast questions and vanish from the everyday ones, where most of the buying happens.</p>
+        <p>I asked ChatGPT 20 real buyer questions across outdoor and travel gear. A pattern showed up again and again: independent brands win the enthusiast questions and vanish from the everyday ones, where most of the buying happens.</p>
       </div>
       <div class="case">
         <div class="stat"><div class="k good">#1</div><p>An independent travel-bag brand was ChatGPT's top pick for "best travel backpack if money is no object."</p></div>
         <div class="stat"><div class="k bad">0 of 2</div><p>The same brand was missing from both "under $300" travel-backpack questions, even though its 40L pack costs $250.</p></div>
         <div class="stat"><div class="k bad">3rd → B&amp;H</div><p>Another brand was recommended, but ChatGPT sent the shopper to buy from a big retailer instead of the brand's own store.</p></div>
       </div>
-      <p class="note">Results from our own tests in ChatGPT, November 2026. AI answers change between runs, so we repeat questions and track trends rather than single answers.</p>
+      <p class="note">Results from my own tests in ChatGPT, November 2026. AI answers change between runs, so I repeat questions and track trends rather than single answers.</p>
       <div class="cta-row" style="margin-top:22px"><a class="btn" href="/study/">Read the full study</a><a class="btn ghost" href="/sample-report/">See a sample free check</a></div>
     </div>
   </section>
 
-  <section id="how">
+  <section id="about">
+    <div class="wrap about">
+      <div class="portrait">
+        <img src="eduardo.svg" alt="Portrait of Eduardo Bravo" width="380" height="450" loading="lazy">
+        <div class="tag"><b>Eduardo Bravo</b>Founder, PickedFirst</div>
+      </div>
+      <div>
+        <div class="eyebrow">Who you'll work with</div>
+        <h2>Hi, I'm Eduardo. You'll deal with me directly.</h2>
+        <p>I'm the founder of PickedFirst and a Business Administration student at the University of La Laguna, in Spain's Canary Islands. I started PickedFirst after seeing how often ChatGPT skips great independent brands, or recommends them and then sends the shopper to a big retailer.</p>
+        <p>There's no sales team and no account manager. Every check uses real questions asked in ChatGPT, your prices as a US shopper sees them, and a plain-English write-up that I review and send myself.</p>
+        <ul class="promises">
+          <li>You deal with me directly, from the first email to the monthly report.</li>
+          <li>Every finding can be checked: the exact question, the date and what ChatGPT said.</li>
+          <li>If the gaps aren't worth paying to fix, I'll tell you.</li>
+          <li>I answer every email personally, usually within a day.</li>
+        </ul>
+        <div class="sig">
+          <a class="btn" href="#contact">Get your free check</a>
+          <a class="btn ghost" href="mailto:eduardo@bepickedfirst.com">eduardo@bepickedfirst.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="band">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">How it works</div>
@@ -212,31 +264,31 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="step">
           <div class="n">01</div>
           <h3>Test</h3>
-          <p>We ask ChatGPT and other AI assistants the questions your buyers ask: by product type, budget and use case.</p>
+          <p>I ask ChatGPT and other AI assistants the questions your buyers ask: by product type, budget and use case.</p>
           <ul><li>Who gets named, and in what order</li><li>Which store the shopper is sent to</li><li>Each question repeated, not a one-off</li></ul>
         </div>
         <div class="step">
           <div class="n">02</div>
           <h3>Fix</h3>
-          <p>We work on the signals AI assistants read about your products, starting with your best sellers.</p>
+          <p>I work on the signals AI assistants read about your products, starting with your best sellers.</p>
           <ul><li>Product titles and descriptions that state price band, size and use case</li><li>Structured data: product, price, reviews</li><li>Your Shopify product feed for AI channels</li><li>Answer pages for the comparison questions buyers ask</li></ul>
         </div>
         <div class="step">
           <div class="n">03</div>
           <h3>Track</h3>
-          <p>Every month we re-run your question set and send a short report: where you gained, where you lost, and what we're doing next.</p>
+          <p>Every month I re-run your question set and send a short report: where you gained, where you lost, and what I'm doing next.</p>
           <ul><li>Plain-English monthly report</li><li>New questions added as your catalog grows</li><li>Competitor movements flagged</li></ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="pricing" class="band">
+  <section id="pricing">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Pricing</div>
         <h2>Simple, and no long contracts</h2>
-        <p>Start with the free check. If the gaps are worth fixing, we fix them. If they aren't, we'll tell you.</p>
+        <p>Start with the free check. If the gaps are worth fixing, I fix them. If they aren't, I'll tell you.</p>
       </div>
       <div class="plans">
         <div class="plan">
@@ -250,7 +302,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="plan featured">
           <h3>Setup</h3>
           <div class="price">$490 <span>one-time</span></div>
-          <p>We fix the foundations on your store.</p>
+          <p>I fix the foundations on your store.</p>
           <ul><li>Full audit: 30+ buyer questions, repeated</li><li>Rewrites for up to 15 product pages</li><li>Structured data and product feed check</li><li>2 answer pages for your key comparisons</li></ul>
           <a class="btn" href="#contact">Get started</a>
         </div>
@@ -259,39 +311,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="price">$249 <span>/ month</span></div>
           <p>Keep improving and keep watching.</p>
           <ul><li>Monthly re-test of your question set</li><li>Ongoing product page improvements</li><li>New answer pages as needed</li><li>Cancel any month</li></ul>
-          <a class="btn ghost" href="#contact">Talk to us</a>
+          <a class="btn ghost" href="#contact">Talk to me</a>
         </div>
       </div>
-      <p class="honest"><b>Our honest promise:</b> no one can guarantee a spot in an AI's answer, and anyone who does is guessing. We promise the work, the measurement and straight answers about what's moving.</p>
+      <p class="honest"><b>My honest promise:</b> no one can guarantee a spot in an AI's answer, and anyone who does is guessing. I promise the work, the measurement and straight answers about what's moving.</p>
     </div>
   </section>
 
-  <section id="faq">
+  <section id="faq" class="band">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">FAQ</div>
-        <h2>Questions brands ask us</h2>
+        <h2>Questions brands ask</h2>
       </div>
       <div class="faq">
         <details><summary>Is this just SEO with a new name?</summary><p>It overlaps, but it isn't the same. Google ranks pages; AI assistants pick a handful of products and explain why. That means product details like price band, size, materials and use case need to be stated clearly enough for an assistant to match them to a shopper's question.</p></details>
-        <details><summary>Which AI assistants do you test?</summary><p>ChatGPT first, because that's where most AI shopping questions happen today. We also check Perplexity and Google's AI answers for your key questions.</p></details>
-        <details><summary>Do you need access to my store?</summary><p>Not for the free check: we only use your public site. For the setup we ask for Shopify collaborator access, limited to products and content, and you can remove it anytime.</p></details>
+        <details><summary>Which AI assistants do you test?</summary><p>ChatGPT first, because that's where most AI shopping questions happen today. I also check Perplexity and Google's AI answers for your key questions.</p></details>
+        <details><summary>Do you need access to my store?</summary><p>Not for the free check: I only use your public site. For the setup I ask for Shopify collaborator access, limited to products and content, and you can remove it anytime.</p></details>
         <details><summary>Who is this for?</summary><p>Independent Shopify brands selling in the US, especially in outdoor, travel and gear categories, where shoppers ask detailed "best X under $Y" questions.</p></details>
-        <details><summary>Who is behind PickedFirst?</summary><p>PickedFirst is run by Eduardo, based in Spain. We work remotely with US Shopify brands, entirely by email: no calls to book and nothing to install for the free check. You can see how we work in our <a href="/study/">study of 20 ChatGPT shopping questions</a>.</p></details>
-        <details><summary>How fast will I see changes?</summary><p>Product page and data fixes are live within days. How fast assistants pick them up varies, which is why we re-test every month and report what changed.</p></details>
+        <details><summary>Who is behind PickedFirst?</summary><p>Me, Eduardo Bravo. I founded PickedFirst and do the work myself from Tenerife, Spain, working with US Shopify brands by email: no calls to book and nothing to install for the free check. You can see how I work in my <a href="/study/">study of 20 ChatGPT shopping questions</a> and the <a href="/sample-report/">sample report</a>.</p></details>
+        <details><summary>Why work with one person instead of an agency?</summary><p>You get the person doing the work, not an account manager. Fewer clients means each store gets its questions tested properly and repeated, and you always know who to email.</p></details>
+        <details><summary>How fast will I see changes?</summary><p>Product page and data fixes are live within days. How fast assistants pick them up varies, which is why I re-test every month and report what changed.</p></details>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="padding-top:20px">
+  <section id="contact">
     <div class="wrap">
       <div class="contact">
         <div>
+          <div class="contact-person"><img src="eduardo.svg" alt="" width="52" height="52"><span><b>Eduardo Bravo</b>Founder, PickedFirst</span></div>
           <h2>Find out if ChatGPT recommends you</h2>
-          <p>Send us your store URL and your top 3 products. We'll run the free check and email you the results within 48 hours.</p>
+          <p>Send me your store URL and your top 3 products. I'll run the free check and email you the results within 48 hours.</p>
         </div>
         <div>
-          <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%20AI%20visibility%20check&amp;body=Store%20URL%3A%20%0ATop%203%20products%3A%20">Email us for a free check</a>
+          <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%20AI%20visibility%20check&amp;body=Store%20URL%3A%20%0ATop%203%20products%3A%20">Email me for a free check</a>
           <p class="mailline">Or write to <b>eduardo@bepickedfirst.com</b><button type="button" class="copy" data-copy="eduardo@bepickedfirst.com">Copy email</button></p>
         </div>
       </div>
@@ -302,7 +356,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>© 2026 PickedFirst · <a href="/study/" style="color:inherit">Study</a> · <a href="/sample-report/" style="color:inherit">Sample report</a></span>
-    <span>AI shopping visibility for independent Shopify brands</span>
+    <span>Run by Eduardo Bravo · Tenerife, Spain · <a href="mailto:eduardo@bepickedfirst.com" style="color:inherit">eduardo@bepickedfirst.com</a></span>
   </div>
 </footer>
 <script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent='Copied!';setTimeout(function(){b.textContent=o},1800)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,fallback)}else{fallback()}function fallback(){var t=document.createElement('textarea');t.value=v;t.setAttribute('readonly','');t.style.position='absolute';t.style.left='-9999px';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done()}})})</script>
