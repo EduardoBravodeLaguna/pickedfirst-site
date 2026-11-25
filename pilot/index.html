@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free 30-day pilot | PickedFirst</title>
+<meta name="description" content="How the free 30-day PickedFirst pilot works for Shopify brands, with a real anonymized day-0 report: what ChatGPT answered, the three numbers we track and what we'd change.">
+<link rel="canonical" href="https://bepickedfirst.com/pilot/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Free 30-day pilot | PickedFirst">
+<meta property="og:description" content="How the free 30-day PickedFirst pilot works for Shopify brands, with a real anonymized day-0 report: what ChatGPT answered, the three numbers we track and what we'd change.">
+<meta property="og:url" content="https://bepickedfirst.com/pilot/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Free 30-day pilot: one product, measured before and after", "datePublished": "2026-11-25", "author": {"@type": "Person", "name": "Eduardo Bravo de Laguna"}, "publisher": {"@type": "Organization", "name": "PickedFirst"}, "description": "How the free 30-day PickedFirst pilot works, with an anonymized day-0 report."}</script>
+<style>
+:root{--ink:#16201b;--ink-2:#3d4a43;--muted:#6b776f;--paper:#f6f3ec;--card:#fffdf8;--line:#e2ddd0;--green:#1f5c45;--green-2:#2f7a5d;--mint:#dcebe2;--amber:#c9741f;--red:#b4452f;
+--serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(246,243,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:15px}
+.nav-links a{color:var(--ink-2);text-decoration:none}
+.btn{display:inline-block;background:var(--green);color:#fff !important;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:999px}
+.btn:hover{background:var(--green-2)}
+article{max-width:780px;margin:0 auto;padding:64px 24px 40px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;line-height:1.15}
+h1{font-size:clamp(34px,4.6vw,50px);margin:12px 0 18px}
+h2{font-size:30px;margin:56px 0 14px}
+h3{font-size:21px;margin:30px 0 8px}
+.lead{font-size:19px;color:var(--ink-2)}
+.meta{font-size:14px;color:var(--muted)}
+p,li{color:var(--ink-2)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.stat .k{font-family:var(--serif);font-size:40px;font-weight:600;line-height:1;color:var(--green)}
+.stat .k.bad{color:var(--red)}
+.stat p{margin:10px 0 0;font-size:15.5px}
+.tablewrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink);background:var(--paper);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td{color:var(--ink-2)}
+td.flag{color:var(--red);font-weight:600}
+td.good{color:var(--green);font-weight:600}
+.callout{margin:28px 0;padding:18px 20px;border-left:3px solid var(--amber);background:var(--card);border-radius:0 12px 12px 0;font-size:15.5px}
+.callout p{margin:0}
+.sample-banner{background:var(--mint);border-radius:12px;padding:14px 18px;font-size:15px;margin:0 0 32px}
+.cta{background:var(--green);color:#eef5f0;border-radius:20px;padding:36px;margin:56px 0 0}
+.cta h2{color:#fff;margin:0 0 10px;font-size:28px}
+.cta p{color:#d4e6dc;margin:0 0 20px}
+.cta .btn{background:#f6f3ec;color:var(--green) !important}
+footer{padding:36px 0 48px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+.copy{font:inherit;font-size:14px;font-weight:600;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 14px;margin-left:0;cursor:pointer}.copy:hover{background:rgba(255,255,255,.12)}.mailline{margin:16px 0 0 !important;font-size:15px;color:#eef5f0 !important;display:flex;flex-wrap:wrap;align-items:center;gap:6px}.mailline b{color:#fff;font-weight:600}
+@media (max-width:700px){.stats{grid-template-columns:1fr}
+.tablewrap{overflow:visible}thead{display:none}table,tbody,tr,td{display:block;width:100%}tr{padding:10px 0;border-bottom:1px solid var(--line)}tr:last-child{border-bottom:none}td{border:none;padding:3px 16px}td:before{content:attr(data-label);display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}td[data-label="#"]{font-family:var(--serif);font-weight:600;color:var(--ink)}td[data-label="#"]:before{display:none}.nav-links a:not(.btn){display:none}article{padding-top:40px}}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}.step,.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}.step .n{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}.step h3,.box h3{margin:6px 0 6px;font-size:20px}.step p{margin:0;font-size:15.5px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}.box ul{margin:8px 0 0;padding-left:20px;font-size:15.5px}.stat .k{font-size:36px}@media (max-width:700px){.steps,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" aria-label="PickedFirst home">
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#1f5c45"/><path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#f6f3ec" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      PickedFirst
+    </a>
+    <nav class="nav-links">
+      <a href="/study/">Study</a>
+      <a href="/sample-report/">Sample report</a>
+      <a href="/pilot/">Free pilot</a>
+      <a class="btn" href="/#contact">Free check</a>
+    </nav>
+  </div>
+</header>
+<main>
+<article>
+
+<div class="eyebrow">Free pilot</div>
+<h1>A free 30-day pilot: one product, measured before and after</h1>
+<p class="lead">I'm running this with 3 Shopify brands in outdoor and travel. I pick one product, record what ChatGPT says about it today, fix the product page and store settings, and ask the same questions again on day 30. You get a one-page before/after report.</p>
+<p class="meta">Run by Eduardo Bravo de Laguna, founder of PickedFirst. You deal with me directly.</p>
+
+<h2>How the pilot works</h2>
+<div class="steps">
+  <div class="step"><div class="n">Day 0</div><h3>Record</h3><p>I write 5–10 real shopper questions for your category and ask each one 3 times in a fresh ChatGPT chat, as a US shopper. I save every answer.</p></div>
+  <div class="step"><div class="n">Week 1</div><h3>Fix</h3><p>I prepare the changes to your product page and store settings. You approve each one before it goes live.</p></div>
+  <div class="step"><div class="n">Day 30</div><h3>Re-test</h3><p>Same questions, same setup, same number of runs, so the before and after can be compared.</p></div>
+  <div class="step"><div class="n">Report</div><h3>Before / after</h3><p>One page: what moved, what didn't and what I'd do next. If you're happy with it, all I ask is a short testimonial.</p></div>
+</div>
+
+<h2>The three numbers I track</h2>
+<ol>
+<li><b>Brand shown:</b> in how many answers ChatGPT names your brand.</li>
+<li><b>Right product:</b> how often it names the product we're working on, not another one from your range.</li>
+<li><b>Link to your product page:</b> how often the shopper is sent to that product page, rather than your homepage, a big retailer or a review site.</li>
+</ol>
+
+<h2>What I do, and what stays with you</h2>
+<div class="two">
+  <div class="box"><h3>I do the work</h3><ul>
+    <li>Rewrite the product description so it leads with facts and says who the product is for</li>
+    <li>Make specs and materials consistent across the page</li>
+    <li>Check structured data, your product feed and robots.txt</li>
+    <li>Add answers to the questions shoppers actually ask</li>
+  </ul></div>
+  <div class="box"><h3>You stay in control</h3><ul>
+    <li>Give me collaborator access, or paste the changes yourself</li>
+    <li>Confirm facts only you know (materials, sizes, use cases)</li>
+    <li>Approve every change before it goes live</li>
+    <li>Check that the ChatGPT sales channel is on in your Shopify admin</li>
+  </ul></div>
+</div>
+<p>Before any theme change, I work on a duplicate of your theme, so everything can be undone.</p>
+
+<div class="callout"><p><b>My honest promise:</b> nobody can guarantee a spot in ChatGPT's answers, and the answers change from one try to the next. The report shows what changed in the answers to your questions, measured the same way twice. Nothing more, nothing less.</p></div>
+
+<h2 id="example">Example: a real day-0 report</h2>
+<div class="sample-banner">This is a day-0 check I ran on a real outdoor brand's sun hat on 24 November 2026, with the brand and product names removed. The brand is not a client: I ran it to show exactly what you receive on day 0 of a pilot.</div>
+
+<p><b>Brand B</b> makes sun hats. <b>Hat A</b> is its signature wide-brim hat, at about $55. <b>Hat B</b> is a sister model that costs a little more.</p>
+
+<div class="stats">
+  <div class="stat"><div class="k">9 of 12</div><p>answers to activity questions (hiking, fishing, travel, kayaking) named Brand B.</p></div>
+  <div class="stat"><div class="k bad">1 of 12</div><p>named Hat A, the product a pilot would work on. ChatGPT picked Hat B instead.</p></div>
+  <div class="stat"><div class="k bad">1 of 9</div><p>answers that named Brand B linked to a product page. Most linked to the homepage.</p></div>
+  <div class="stat"><div class="k">Positive</div><p>Asked about Hat A by name, ChatGPT called it worth buying and quoted the right price.</p></div>
+</div>
+
+<h3>What we asked and what ChatGPT answered</h3>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Shopper question</th><th>Brand B shown</th><th>Which hat (position)</th><th>Where the links went</th></tr></thead><tbody>
+<tr><td data-label="#">1</td><td data-label="Shopper question">Best sun hat for hiking under $60</td><td class="good" data-label="Brand B shown">3 of 3</td><td data-label="Which hat (position)">Hat B: 3rd, 1st, 1st</td><td data-label="Where the links went">Review sites only once; Brand B homepage and REI twice</td></tr>
+<tr><td data-label="#">2</td><td data-label="Shopper question">Best wide-brim sun hat with UPF 50 for fishing</td><td class="good" data-label="Brand B shown">3 of 3</td><td data-label="Which hat (position)">Hat B: 2nd, 2nd, 2nd</td><td data-label="Where the links went">Hat B product page once; Brand B homepage twice</td></tr>
+<tr><td data-label="#">3</td><td data-label="Shopper question">Best packable sun hat for travel</td><td class="flag" data-label="Brand B shown">1 of 3</td><td data-label="Which hat (position)">Hat B: 2nd</td><td data-label="Where the links went">No links</td></tr>
+<tr><td data-label="#">4</td><td data-label="Shopper question">Best sun hat for kayaking that stays on in the wind</td><td data-label="Brand B shown">2 of 3</td><td data-label="Which hat (position)">Hat B: 2nd once; Hat A: 2nd once</td><td data-label="Where the links went">Brand B homepage once; no link once</td></tr>
+<tr><td data-label="#">5</td><td data-label="Shopper question">Is [Hat A] worth it? (asked by name)</td><td data-label="Brand B shown">2 runs</td><td data-label="Which hat (position)">Hat A, compared with Hat B</td><td data-label="Where the links went">"Worth buying" both times; one run showed a European shop's buy button</td></tr>
+</tbody></table></div>
+<p>Brands ChatGPT named instead: Columbia Bora Bora, Tilley LTM6, Outdoor Research, REI Sahara, DAKINE and Solbari.</p>
+
+<h3>What we'd change</h3>
+<div class="tablewrap"><table><thead><tr><th>What we found</th><th>Proposed change</th></tr></thead><tbody>
+<tr><td data-label="What we found">The page never says what the hat is for. Shoppers ask by activity, and a big retailer's listing tags it for hiking and paddling, but the brand's own page doesn't.</td><td data-label="Proposed change">Add a short "Best for" line: hiking, fishing, paddling, travel. Reviews already back each one.</td></tr>
+<tr><td data-label="What we found">The description that machines read opens with a press quote, not with what the hat is.</td><td data-label="Proposed change">Lead with the facts: UPF rating, brim width, weight, chinstrap. Keep the quote lower down.</td></tr>
+<tr><td data-label="What we found">Materials are described differently in different sections of the page.</td><td data-label="Proposed change">One clear materials line per color.</td></tr>
+<tr><td data-label="What we found">A few colors are heavily discounted on the brand's site, but ChatGPT only quoted the full price.</td><td data-label="Proposed change">Not a data error. Worth knowing: the best deal on the brand's own site isn't reaching the answers.</td></tr>
+<tr><td data-label="What we found">Structured data is complete (rating, review count, every color with price and stock), and robots.txt lets OpenAI's crawlers in.</td><td class="good" data-label="Proposed change">No change needed.</td></tr>
+<tr><td data-label="What we found">Can't be checked from outside: whether the ChatGPT sales channel is switched on in Shopify.</td><td data-label="Proposed change">The brand confirms it in its Shopify admin.</td></tr>
+</tbody></table></div>
+
+<h3>What it means</h3>
+<p>Brand B doesn't have a visibility problem: ChatGPT already knows it and likes Hat A when asked directly. The gaps are which product it names when shoppers ask by activity, and where it sends them. Those are what the pilot changes would target, and day 30 would show whether they moved.</p>
+
+<h3>How this check was done</h3>
+<p>Each question was asked up to 3 times in a temporary ChatGPT chat, starting fresh each time, on 24 November 2026. This was my first full run of the method: some answers were collected signed out and some signed in from Spain, which is why one answer showed a European shop. In a pilot, every run uses the same setup from a US location, on day 0 and on day 30.</p>
+
+<div class="cta">
+  <h2>Want to be one of the 3 pilot brands?</h2>
+  <p>Email me your store URL and the product you'd like to try. I'll reply within a day. It's free, and there's no call needed.</p>
+  <a class="btn" href="mailto:eduardo@bepickedfirst.com?subject=Free%2030-day%20pilot&amp;body=Store%20URL%3A%20%0AProduct%20to%20try%3A%20">Email me about the pilot</a>
+  <p class="mailline">Or write to <b>eduardo@bepickedfirst.com</b><button type="button" class="copy" data-copy="eduardo@bepickedfirst.com">Copy email</button></p>
+</div>
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 PickedFirst · <a href="/">Home</a> · <a href="/study/">Study</a> · <a href="/sample-report/">Sample report</a> · <a href="/pilot/">Free pilot</a></span>
+    <span>AI shopping visibility for independent Shopify brands</span>
+  </div>
+</footer>
+<script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent='Copied!';setTimeout(function(){b.textContent=o},1800)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,fallback)}else{fallback()}function fallback(){var t=document.createElement('textarea');t.value=v;t.setAttribute('readonly','');t.style.position='absolute';t.style.left='-9999px';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done()}})})</script>
+</body>
+</html>
